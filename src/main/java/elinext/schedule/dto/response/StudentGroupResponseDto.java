@@ -5,7 +5,7 @@ import javax.persistence.OneToMany;
 import lombok.Data;
 
 @Data
-public class GroupResponseDto {
+public class StudentGroupResponseDto {
     private Long id;
     private String name;
     @OneToMany

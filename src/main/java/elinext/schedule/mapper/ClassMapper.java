@@ -17,7 +17,7 @@ public class ClassMapper implements ResponseDtoMapper<ClassResponseDto, Class> {
         ClassResponseDto classResponseDto = new ClassResponseDto();
         classResponseDto.setClassroom(classroomMapper.mapToDto(clazz.getClassroom()));
         classResponseDto.setId(clazz.getId());
-        classResponseDto.setSubject(classResponseDto.getSubject());
+        classResponseDto.setSubject(clazz.getSubject());
         return classResponseDto;
     }
 }

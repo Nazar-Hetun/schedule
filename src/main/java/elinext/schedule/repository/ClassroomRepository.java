@@ -7,10 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface ClassroomRepository extends JpaRepository<Classroom, Long> {
-
     @Override
     Optional<Classroom> findById(Long id);
 
-    @Query("select c from Classroom c")
+    @Query("SELECT c FROM Classroom c")
     List<Classroom> getAll();
 }

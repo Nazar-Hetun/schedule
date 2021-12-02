@@ -5,14 +5,14 @@ import elinext.schedule.model.Student;
 import org.springframework.stereotype.Component;
 
 @Component
-public class StudentMapper implements ResponseDtoMapper<StudentResponseDto, Student>{
+public class StudentMapper implements ResponseDtoMapper<StudentResponseDto, Student> {
 
     @Override
     public StudentResponseDto mapToDto(Student student) {
         StudentResponseDto studentResponseDto = new StudentResponseDto();
         studentResponseDto.setId(student.getId());
         studentResponseDto.setName(student.getName());
-        studentResponseDto.setGroupId(student.getGroup().getId());
+        studentResponseDto.setGroupId(student.getStudentGroup().getId());
         return studentResponseDto;
     }
 }

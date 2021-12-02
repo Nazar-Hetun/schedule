@@ -4,13 +4,13 @@ import elinext.schedule.model.Classroom;
 import java.util.List;
 
 public interface ClassroomService {
-     Classroom add(Classroom classroom);
+    Classroom add(Classroom classroom);
 
-     Classroom get(Long id);
+    Classroom get(Long id);
 
-     List<Classroom> getAll();
+    List<Classroom> getAll();
 
-     Classroom update(Classroom classroom);
+    Classroom update(Classroom classroom);
 
-     void delete(Classroom classroom);
+    void delete(Classroom classroom);
 }

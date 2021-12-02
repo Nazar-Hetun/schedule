@@ -1,6 +1,7 @@
 package elinext.schedule.model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -14,6 +15,6 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @ManyToOne
-    private Group group;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private StudentGroup studentGroup;
 }
